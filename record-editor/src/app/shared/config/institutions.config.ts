@@ -25,7 +25,7 @@ import { countryCodeToName } from 'inspire-schemas';
 import { customValidationForDateTypes, anchorBuilder } from './commons';
 import { environment } from '../../../environments/environment';
 
-export const conferences: JsonEditorConfig = {
+export const institutions: JsonEditorConfig = {
   customFormatValidation: customValidationForDateTypes,
   menuMaxDepth: 1,
   enableAdminModeSwitch: true,
@@ -170,13 +170,7 @@ export const conferences: JsonEditorConfig = {
       cnum: {
         disabled: true,
       },
-      new_record: {
-        disabled: true,
-      },
       $schema: {
-        hidden: true,
-      },
-      _collections: {
         hidden: true,
       },
       self: {
@@ -194,7 +188,10 @@ export const conferences: JsonEditorConfig = {
       legacy_version: {
         hidden: true,
       },
-      deleted_records: {
+      new_record: {
+        hidden: true,
+      },
+      deleted_record: {
         hidden: true,
       },
     },
